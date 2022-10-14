@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4061903e99.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Page 1 (Intro) -->
+  <section id="page-1" class="page">
+    <h1>Welcome To My Website</h1>
+    <p>My name is MD ISA MIA. I have currently completed my Higher Secondary Certificate (HSC) in Bangladesh from Bishwanath College. As a person I feel that I have a calm, reassuring manner, good communication skills. I am extremely interested to learn cooding.</p>
+    <div>
+      <a href="#page-2" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="page-2" class="page">
+    <h1>What I Want To Do.</h1>
+    <p>I have always wanted to be a Computer Engineer since I was little. From a very early age Computer Science has always had a strong impact on me. I have always been interested in computers since my childhood, both their hardware and software.</p>
+    <div>
+      <a href="#page-1" class="btn btn-dark">
+        Prev Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-3" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="page-3" class="page">
+    <h1>About Subject</h1>
+    <p>The HSC Levels I have studied have helped me gain skills which will help me in computer science and software engineering at university. Chemistry and Physics have both helped to improve my analytical and evaluative skills. Mathematics is more methodical and Computing has given me an insight into programming languages and taught me how to create simple algorithms.</p>
+    <div>
+      <a href="#page-2" class="btn btn-dark">
+        Prev Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-4" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="page-4" class="page">
+    <h1>Page 4</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatibus asperiores totam odit incidunt quo assumenda cum, eveniet enim aliquam accusantium ipsa fugiat dolorum ullam harum ratione impedit eaque, dicta suscipit delectus perspiciatis at nulla facere. Dignissimos eveniet perferendis dolor.</p>
+    <div>
+      <a href="#page-3" class="btn btn-dark">
+        Prev Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+    </div>
+  </section>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script>
+    
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  
+  </script>
+</body>
+</html>
